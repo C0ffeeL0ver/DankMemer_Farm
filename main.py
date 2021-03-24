@@ -48,6 +48,14 @@ def Farm():
     time.sleep(1)
     r.post(url, headers=headers, data=data)
     
+    data = {"content":"pls work"}
+    r.post(url, headers=headers, data=data)
+    time.sleep(1)
+
+    data = {"content":"pls daily"}
+    r.post(url, headers=headers, data=data)
+    time.sleep(1)
+
     data = {"content":"pls dep max"}
     r.post(url, headers=headers, data=data)
     count += 1
