@@ -40,6 +40,14 @@ def Farm():
     r.post(url, headers=headers, data=data)
     time.sleep(1)
 
+    data = {"content":"pls use bank"}
+    r.post(url, headers=headers, data=data)
+    time.sleep(1)
+
+    data = {"content":"1"}
+    time.sleep(1)
+    r.post(url, headers=headers, data=data)
+    
     data = {"content":"pls dep max"}
     r.post(url, headers=headers, data=data)
     count += 1
