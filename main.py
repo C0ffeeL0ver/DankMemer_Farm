@@ -10,9 +10,9 @@ def Farm():
     print("Script Count: "+str(count))
     data = {"content":"pls pm"}
     r.post(url, headers=headers, data=data)
-    time.sleep(1)
+    time.sleep(2)
 
-    data = {"content":"f"}
+    data = {"content":pm[random.randrange(0,5)]}
     r.post(url, headers=headers, data=data)
     time.sleep(1)
 
@@ -30,9 +30,9 @@ def Farm():
 
     data = {"content":"pls highlow"}
     r.post(url, headers=headers, data=data)
-    time.sleep(1)
+    time.sleep(2)
 
-    data = {"content":highlow[random.randrange(0,1)]}
+    data = {"content":highlow[random.randrange(0,2)]}
     r.post(url, headers=headers, data=data)
     time.sleep(1)
 
@@ -42,7 +42,7 @@ def Farm():
 
     data = {"content":"pls use bank"}
     r.post(url, headers=headers, data=data)
-    time.sleep(1)
+    time.sleep(2)
 
     data = {"content":"1"}
     time.sleep(1)
@@ -66,6 +66,7 @@ Authorization = os.getenv('Authorization_Token')
 url = os.getenv('url')
 headers = {'Authorization': Authorization,}
 highlow = ["low","high"]
+pm = ["f","r","i","c","k"]
 r = requests.session()
 while(True):
     Farm()
