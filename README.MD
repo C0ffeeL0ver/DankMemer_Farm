@@ -18,7 +18,6 @@
 This project use the following modules:
 * os
 * requests
-* bs4 (BeautifulSoup)
 * dotenv(load_dotenv)
 * time
 * random
