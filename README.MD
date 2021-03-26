@@ -13,7 +13,7 @@
 * Setup the Authorization_Token and url in .env file
 * In te first line add Authorization_Token = Value obtained
 * On the second line of the same file, place url = https://discord.com/api/v8/channels/[YOUR_SECOND_ID]/messages (copy de second ID, wich is the ID from channel that you want to activate the script )
-* Execute in promp: python main.py
+* Execute in promp: python main.py or  Execute start.bat in windows
 
 ## Python libraries
 This project use the following modules:
