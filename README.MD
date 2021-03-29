@@ -3,7 +3,7 @@
 ## Table of contents
 * [General info](#general-info)
 * [Setup](#setup)
-* [Python Libraries](#pytho-libraries)
+* [Python Libraries](#python-libraries)
 
 ## General info
 * This script sends requests with messages to a text channel on the discord 
