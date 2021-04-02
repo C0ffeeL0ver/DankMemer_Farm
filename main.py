@@ -69,7 +69,42 @@ def Farm():
     r.post(url, headers=headers, data=data)
     time.sleep(1)
 
+    data = {"content":"pls use candy"}
+    r.post(url, headers=headers, data=data)
+    time.sleep(1)
+
+    data = {"content":"pls use apple"}
+    r.post(url, headers=headers, data=data)
+    time.sleep(1)
+
+    data = {"content":"pls use normie"}
+    r.post(url, headers=headers, data=data)
+    time.sleep(1)
+
+    data = {"content":"pls use spinner"}
+    r.post(url, headers=headers, data=data)
+    time.sleep(1)
+
+
+    data = {"content":"pls use dank"}
+    r.post(url, headers=headers, data=data)
+    time.sleep(1)
+
     data = {"content":"pls daily"}
+    r.post(url, headers=headers, data=data)
+    time.sleep(1)
+
+    #Pet Commands
+
+    data = {"content":"pls pet feed"}
+    r.post(url, headers=headers, data=data)
+    time.sleep(1)
+
+    data = {"content":"pls pet pat"}
+    r.post(url, headers=headers, data=data)
+    time.sleep(1)
+
+    data = {"content":"pls pet wash"}
     r.post(url, headers=headers, data=data)
     time.sleep(1)
 
@@ -123,13 +158,18 @@ def Farm():
         data = {"content":"pls sell skunk all"}
         r.post(url, headers=headers, data=data)
         time.sleep(2)
+       
+        #bread
+        data = {"content":"pls sell bread all"}
+        r.post(url, headers=headers, data=data)
+        time.sleep(2)
 
     data = {"content":"pls dep max"}
     r.post(url, headers=headers, data=data)
     count += 1
 
 
-    time.sleep(random.randrange(30,51))
+    time.sleep(random.randrange(20,31))
 
     
 
