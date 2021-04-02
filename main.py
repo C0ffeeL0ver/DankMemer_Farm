@@ -69,44 +69,46 @@ def Farm():
     r.post(url, headers=headers, data=data)
     time.sleep(1)
 
-    data = {"content":"pls use candy"}
-    r.post(url, headers=headers, data=data)
-    time.sleep(1)
-
-    data = {"content":"pls use apple"}
-    r.post(url, headers=headers, data=data)
-    time.sleep(1)
-
-    data = {"content":"pls use normie"}
-    r.post(url, headers=headers, data=data)
-    time.sleep(1)
-
-    data = {"content":"pls use spinner"}
-    r.post(url, headers=headers, data=data)
-    time.sleep(1)
-
-
-    data = {"content":"pls use dank"}
-    r.post(url, headers=headers, data=data)
-    time.sleep(1)
-
     data = {"content":"pls daily"}
     r.post(url, headers=headers, data=data)
     time.sleep(1)
 
-    #Pet Commands
+    #Run pet/use commands every 5 rounds
+    if(count % 5 == 0):
+        #Use Commands
+        data = {"content":"pls use candy"}
+        r.post(url, headers=headers, data=data)
+        time.sleep(4)
 
-    data = {"content":"pls pet feed"}
-    r.post(url, headers=headers, data=data)
-    time.sleep(1)
+        data = {"content":"pls use apple"}
+        r.post(url, headers=headers, data=data)
+        time.sleep(4)
 
-    data = {"content":"pls pet pat"}
-    r.post(url, headers=headers, data=data)
-    time.sleep(1)
+        data = {"content":"pls use normie"}
+        r.post(url, headers=headers, data=data)
+        time.sleep(4)
 
-    data = {"content":"pls pet wash"}
-    r.post(url, headers=headers, data=data)
-    time.sleep(1)
+        data = {"content":"pls use spinner"}
+        r.post(url, headers=headers, data=data)
+        time.sleep(4)
+
+
+        data = {"content":"pls use dank"}
+        r.post(url, headers=headers, data=data)
+        time.sleep(3)
+        #Pet Commands
+
+        data = {"content":"pls pet feed"}
+        r.post(url, headers=headers, data=data)
+        time.sleep(3)
+
+        data = {"content":"pls pet pat"}
+        r.post(url, headers=headers, data=data)
+        time.sleep(3)
+
+        data = {"content":"pls pet wash"}
+        r.post(url, headers=headers, data=data)
+        time.sleep(3)
 
     if(Option == 1):
         #boar
@@ -166,10 +168,11 @@ def Farm():
 
     data = {"content":"pls dep max"}
     r.post(url, headers=headers, data=data)
+    if(count % 5 == 0):
+        time.sleep(random.randrange(5,11))
+    else:
+        time.sleep(random.randrange(30,41))
     count += 1
-
-
-    time.sleep(random.randrange(20,31))
 
     
 
