@@ -10,6 +10,7 @@
 
 ## Setup
 * Read a post request when a discord message is sent in the browser. Inspect element -> Network -> Send message -> Headers -> Get Authorization Value.
+* Change the name of the ".txt" file to ".env"
 * Setup the Authorization_Token and url in .env file
 * In te first line add Authorization_Token = Value obtained
 * On the second line of the same file, place url = https://discord.com/api/v8/channels/[YOUR_SECOND_ID]/messages (copy de second ID, wich is the ID from channel that you want to activate the script )
