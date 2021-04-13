@@ -6,6 +6,31 @@ import random
 
 count = 1
 Option = 2
+def main():
+    print("\n\n")
+    print('                          (')
+    print('                           )     (')
+    print('                    ___...(-------)-....___')
+    print('                .-""       )    (          ""-.')
+    print('          .-\'``\'|-._             )         _.-|')
+    print('         /  .--.|   `""---...........---""`   |')
+    print('        /  /    |                             |')
+    print('        |  |    |                             |')
+    print('         \  \   |                             |')
+    print('          `\ `\ |                             |')
+    print('            `\ `|                             |')
+    print('            _/ /\                             /')
+    print('           (__/  \                           /')
+    print('        _..---""` \                         /`""---.._')
+    print('     .-\'           \                      /           \'-.')
+    print('    :               `-.__             __.-\'              :')
+    print('    :                  ) ""---...---"" (                 :')
+    print('     \'._               `"--...___...--"`              _.\'')
+    print('       \\""--..__                              __..--""/')
+    print('        \'._     """----.....______.....----"""     _.\'')
+    print('           `""--..,,_____            _____,,..--""`')
+    print('                         `"""----"""`')
+    print("\n\n")
 def Options():
     global Option
     print("[+][-][-][-][-][-][-][-][-][+]")
@@ -183,6 +208,7 @@ headers = {'Authorization': Authorization,}
 highlow = ["low","high"]
 pm = ["f","r","i","c","k"]
 r = requests.session()
+main()
 Options()
 while(True):
     Farm()
